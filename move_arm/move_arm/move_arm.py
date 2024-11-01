@@ -146,11 +146,13 @@ def main(args=None):
     simple_client.send_exec_request()       # リクエストを送る
     simple_client.exec_wait()
     
-    simple_client.send_plan_request('rice_ball_plum_pick')       # リクエストを送る
+    simple_client.send_plan_request('rice_ball_plum')       # リクエストを送る
     simple_client.plan_wait()
 
     simple_client.send_exec_request()       # リクエストを送る
     simple_client.exec_wait()
+
+    
 
     simple_client.send_plan_request('linear_plum_pick')
     simple_client.plan_wait()

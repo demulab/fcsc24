@@ -24,6 +24,7 @@ setup(
         'console_scripts': [
             "move_arm_node = move_arm.move_arm:main",
             "position_to_yaml = move_arm.position_to_yaml:main",
+            "speed_arm_node = move_arm.speed_arm:main",
         ],
     },
 )
