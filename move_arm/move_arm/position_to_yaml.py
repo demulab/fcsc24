@@ -53,9 +53,9 @@ class PositionToYAMLNode(Node):
             package_name = 'move_arm'
             save_path = os.path.join(
                     get_package_share_directory(package_name), 'config/')
+            os.makedirs(save_path, exist_ok=True)
             with open(save_path + file_name + '.yaml', 'w') as f:
                 yaml.dump(self.position_dict, f)
-            os.makedirs(save_path, exist_ok=True)
             self.get_logger().info(f"Save to {save_path + file_name}.yaml")
             return True
         except Exception as e:
